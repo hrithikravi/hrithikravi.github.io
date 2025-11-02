@@ -1,0 +1,303 @@
+html {
+  font-family: -apple-system, Helvetica, arial, sans-serif;
+  color: rgba(0, 0, 0, 0.8);
+  line-height: 1.5em;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+body .content {
+  margin-bottom: 120px;
+}
+a {
+  color: rgba(0, 0, 0, 0.8);
+}
+a:hover {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: -apple-system, Helvetica, arial, sans-serif;
+}
+h1 {
+  line-height: 1.2em;
+}
+.clear {
+  clear: both;
+}
+.hidden {
+  display: none;
+}
+.wrap {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.mono {
+  font-family: monospace;
+}
+.nav {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.nav a {
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  border-bottom: none;
+  font-size: 12px;
+}
+.nav a:hover {
+  font-weight: bold;
+}
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+.nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+.front-matter {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.front-matter h4 {
+  font-family: -apple-system, Helvetica, arial, sans-serif;
+}
+.front-matter .bylines .byline {
+  margin-right: 20px;
+  float: left;
+}
+.front-matter .bylines .byline h3,
+.front-matter .bylines .byline p {
+  margin: 0;
+  font-family: -apple-system, Helvetica, arial, sans-serif;
+}
+.front-matter .bylines .byline h3 {
+  font-size: 9px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.5);
+}
+.front-matter .bylines .byline p {
+  font-size: 10px;
+  line-height: 1.6em;
+}
+.article {
+  font-size: 15px;
+  line-height: 1.6em;
+  color: rgba(0, 0, 0, 0.8);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.article blockquote {
+  margin: 0;
+  padding: 0 1em;
+  color: #777;
+  border-left: 0.25em solid #ddd;
+}
+.article h2 {
+  font-size: 26px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 1rem;
+  padding-top: 1em;
+}
+.article .figure {
+  border-top: 1px solid hsla(0, 0%, 0%, 0.2);
+  border-bottom: 1px solid hsla(0, 0%, 0%, 0.2);
+  padding: 20px 0;
+}
+.article .figure .caption {
+  padding-top: 15px;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 1.2em;
+}
+.article .figure .caption-label {
+  font-weight: bold;
+}
+.article .footnote {
+  line-height: 0;
+}
+.article div.highlight {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 13px;
+  line-height: 1.3em;
+}
+.article ul {
+  padding: 0 15px;
+}
+.article hr {
+  border-bottom: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.7);
+  margin: 33px auto;
+  width: 70px;
+}
+#bibliography {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+#bibliography ol.bibliography {
+  padding-left: 15px;
+  padding-top: 30px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+}
+#blog {
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+#blog #intro {
+  font-size: 14px;
+  font-style: italic;
+  line-height: 1.4em;
+  margin-bottom: 40px;
+}
+#blog .quote {
+  margin-bottom: 10px;
+}
+#blog .quote p {
+  margin-bottom: 5px;
+}
+#blog .post-date {
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+#blog .post-title {
+  display: inline-block;
+  font-weight: bold;
+  margin-top: -20;
+  margin-bottom: 20;
+  font-size: 24px;
+}
+#blog .post-title a {
+  font-size: 28px;
+  text-decoration: none;
+}
+#blog .post-title a:hover {
+  text-decoration: underline;
+}
+#blog .post-subtitle {
+  font-size: 14px;
+  margin-top: 0;
+  margin-bottom: 25px;
+  line-height: 1.5em;
+}
+#blog .year {
+  font-size: 18px;
+  position: relative;
+  right: 100px;
+  color: rgba(0, 0, 0, 0.5);
+  width: 100px;
+  margin-bottom: -24px;
+}
+#intro {
+  display: flex;
+  justify-content: center;
+  margin-top: -80;         /* removes extra top space */
+  padding-top: 0;       /* removes padding if any */
+}
+
+.quote {
+  max-width: 700px;
+  text-align: center;
+  /*margin-top: 1rem;*/      /* small top margin instead of large gap */
+  font-style: italic;
+}
+
+.intro-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;                 /* space between text and image */
+  margin: 1.5rem 0 2.5rem;   /* top/bottom spacing */
+}
+
+.intro-text { flex: 1; }
+
+.intro-name {
+  margin: 0 0 0.75rem;
+  font-size: 2.25rem;
+  line-height: 1.2;
+}
+
+.intro-photo {
+  flex: 0 0 300px;           /* reserve width for the image */
+  max-width: 300px;          /* cap size on wide screens */
+  width: 32%;                /* responsive percentage */
+  height: auto;
+  border-radius: 6px;        /* optional */
+  object-fit: cover;
+  margin-top: -150;
+}
+
+/* Stack on narrow screens */
+@media (max-width: 900px) {
+  .intro-hero { flex-direction: column; }
+  .intro-photo { width: 70%; max-width: 340px; }
+}
+
+.nav-bar{display:flex;justify-content:space-between;align-items:center;padding:1rem 0}
+.nav-menu{display:flex;gap:1.25rem;list-style:none;margin:0;padding:0}
+.nav-menu a{text-decoration:none;color:inherit}
+
+/* icon row */
+.nav-icons{display:flex;align-items:center;gap:1.6rem;} /* increase gap here */
+.icon{display:inline-flex;line-height:1;opacity:.85}
+.icon:hover{opacity:1}
+
+
+#blog #y2017.year,
+#blog #y2018.year {
+  margin-top: 0px;
+}
+hr {
+  border-top: #ccc;
+}
+@media screen and (max-width: 700px) {
+  body {
+    margin: 0 7px;
+  }
+}
+
+/* Headings on section pages */
+.section h1{font-weight:700;margin:0 0 1.1rem}
+
+/* Papers list */
+.pubs{list-style:none;margin:0;padding:0}
+.pubs li{margin:1.1rem 0 1.3rem}
+.pub-title{font-weight:600;text-decoration:underline}
+.pub-authors{margin-top:.15rem}
+.pub-venue{color:#444}
+.tag{color:#128a0a;font-weight:600}
+
+/* Talks list */
+.talks{list-style:none;margin:0;padding:0}
+.talks li{margin:1.1rem 0 1.3rem}
+.talk-title{font-weight:600}
+.talk-where{color:#444}
+.talk-links a{text-decoration:underline}
+
+.site-ack{
+  margin: 60px 0 30px;   /* space above, a little below */
+  text-align: center;
+  font-size: 12px;
+  color: rgba(0,0,0,.5);
+}
+.site-ack a{
+  color: rgba(0,0,0,.5);
+  text-decoration: underline;
+}
+.site-ack a:hover{
+  color: rgba(0,0,0,.7);
+}
