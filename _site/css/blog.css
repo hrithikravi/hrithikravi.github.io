@@ -214,13 +214,13 @@ h1 {
   /*margin-top: 1rem;*/      /* small top margin instead of large gap */
   font-style: italic;
 }
-
+/*
 .intro-hero {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;                 /* space between text and image */
-  margin: 1.5rem 0 2.5rem;   /* top/bottom spacing */
+  gap: 2rem;                 
+  margin: 1.5rem 0 2.5rem;   
 }
 
 .intro-text { flex: 1; }
@@ -232,20 +232,60 @@ h1 {
 }
 
 .intro-photo {
-  flex: 0 0 300px;           /* reserve width for the image */
-  max-width: 300px;          /* cap size on wide screens */
-  width: 32%;                /* responsive percentage */
+  flex: 0 0 300px;           
+  max-width: 300px;          
+  width: 32%;                
   height: auto;
-  border-radius: 6px;        /* optional */
+  border-radius: 6px;        
   object-fit: cover;
   margin-top: -150;
 }
 
-/* Stack on narrow screens */
 @media (max-width: 900px) {
   .intro-hero { flex-direction: column; }
   .intro-photo { width: 70%; max-width: 340px; }
+}*/
+
+/* Desktop / default */
+.intro-hero{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap:2rem;
+  margin:1.5rem 0 2.5rem;
 }
+.intro-text{ 
+  flex:1 1 60%;
+  min-width:0;
+  order:1;                 /* text first in the row */
+}
+.intro-photo{
+  flex:0 0 300px;
+  max-width:300px;
+  width:32%;
+  height:auto;
+  border-radius:6px;
+  object-fit:cover;
+  margin-top:0;
+  order:2;                 /* image second (on the right) */
+}
+
+/* Mobile: float image right so text wraps, then clears below */
+@media (max-width:900px){
+  .intro-hero{ display:block; margin:1rem 0 2rem; }
+  .intro-hero::after{ content:""; display:block; clear:both; }
+
+  .intro-photo{
+    float:right;
+    width:42vw;
+    max-width:220px;
+    height:auto;
+    margin:0 0 .5rem 1rem;   /* space between image and text */
+  }
+  .intro-text{ display:block; }   /* normal block flow */
+}
+
+
 
 .nav-bar{display:flex;justify-content:space-between;align-items:center;padding:1rem 0}
 .nav-menu{display:flex;gap:1.25rem;list-style:none;margin:0;padding:0}

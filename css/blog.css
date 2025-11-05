@@ -246,7 +246,7 @@ h1 {
   .intro-photo { width: 70%; max-width: 340px; }
 }*/
 
-/* Default (desktop) stays as-is */
+/* Desktop / default */
 .intro-hero{
   display:flex;
   align-items:flex-start;
@@ -254,7 +254,11 @@ h1 {
   gap:2rem;
   margin:1.5rem 0 2.5rem;
 }
-.intro-text{ flex:1 1 60%; min-width:0; }   /* allow text to shrink without overflow */
+.intro-text{ 
+  flex:1 1 60%;
+  min-width:0;
+  order:1;                 /* text first in the row */
+}
 .intro-photo{
   flex:0 0 300px;
   max-width:300px;
@@ -263,25 +267,24 @@ h1 {
   border-radius:6px;
   object-fit:cover;
   margin-top:0;
+  order:2;                 /* image second (on the right) */
 }
 
-/* Phones/tablets: keep a ROW, just make things narrower */
+/* Mobile: float image right so text wraps, then clears below */
 @media (max-width:900px){
-  .intro-hero{
-    flex-direction:row;       /* <-- stay side-by-side */
-    align-items:flex-start;
-    gap:1rem;
-  }
-  .intro-text{
-    flex:1 1 60%;
-    min-width:0;              /* prevents overflow */
-  }
+  .intro-hero{ display:block; margin:1rem 0 2rem; }
+  .intro-hero::after{ content:""; display:block; clear:both; }
+
   .intro-photo{
-    flex:0 0 40vw;            /* image ~40% of viewport width */
-    max-width:none;           /* let the 40vw rule take over */
-    width:auto;
+    float:right;
+    width:42vw;
+    max-width:220px;
+    height:auto;
+    margin:0 0 .5rem 1rem;   /* space between image and text */
   }
+  .intro-text{ display:block; }   /* normal block flow */
 }
+
 
 
 .nav-bar{display:flex;justify-content:space-between;align-items:center;padding:1rem 0}

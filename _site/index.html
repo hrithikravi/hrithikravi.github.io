@@ -73,26 +73,24 @@ MathJax.Hub.Config({
 </div>
 
     <div id='blog' class='wrap'>
-        <div id='intro'>
-            <div class='quote'>
-                <p>"A knowledge of the existence of something we cannot penetrate, our perceptions of the profoundest reason and the most radiant beauty, which only in their most primitive forms are accessible to our minds: it is this knowledge and this emotion that constitute true religiosity. In this sense, and only this sense, I am a deeply religious man." — <a href='https://en.wikiquote.org/wiki/Albert_Einstein#:~:text=A%20knowledge%20of%20the%20existence%20of%20something,sense%2C%20I%20am%20a%20deeply%20religious%20man.' target='_blank'>Albert Einstein</a> </p>
-            </div>
+        <div id="intro">
+          <div class="quote"><p></p></div>
         </div>
         <div id='posts' class='section'>
             <div class="intro-hero">
+              <img class="intro-photo" src="/assets/me_in_switzerland.jpg" alt="Hrithik Ravi" loading="lazy"> 
                 <div class="intro-text">
                     <div class='post-row'>
                         <p class='post-title'> Hrithik Ravi </p>
                     </div>
                     <p class='post-subtitle'>
-                        (Note: I am applying to PhD programs this cycle, please reach out to me at <a href="mailto:hrithikr@umich.edu">hrithikr@umich.edu</a>!)<br><br> 
+                        <strong>(Note: I am applying to PhD programs this cycle, please reach out to me at <a href="mailto:hrithikr@umich.edu">hrithikr@umich.edu</a>!)</strong><br><br> 
                         Hi, nice to meet you! I am broadly interested in developing prescriptive theories for language modeling. I aim to gain an actionable understanding of deep learning and LLMs using mathematical and empirical techniques, thus enabling principled algorithmic innovation. Currently I'm working with <a href="https://www.ambujtewari.com/" target="_blank" rel="noopener">Ambuj Tewari</a>, analyzing different ways to elicit chain-of-thought. <br><br>
                          I finished my Bachelor's and Master's at the University of Michigan, advised by <a href="https://web.eecs.umich.edu/~cscott/" target="_blank" rel="noopener">Clayton Scott</a> and <a href="https://web.eecs.umich.edu/~mihalcea/" target="_blank" rel="noopener">Rada Mihalcea</a>. During this time, I explored advanced coursework in theoretical machine learning and LLMs, and published a first-author <strong>NeurIPS 2024</strong> paper on implicit bias. Recently I wrote a <a href="https://docs.google.com/document/d/1ybVwc76oHnhbS_Af2P2o28ndAfiOnNqOaQfsnAWXYu8/edit?tab=t.0#heading=h.b3vldntuu071" target="_blank" rel="noopener">benchmarking research proposal</a> accepted to <strong>Google DeepMind</strong> (GSoC 2025), but I dropped out of the program to focus on research more aligned with my interests.<br><br>
                          Please see my resume for other highlights!
                     </p> 
                     <span class='hidden'>1</span> 
                 </div>
-                <img class="intro-photo" src="/assets/me_in_switzerland.jpg" alt="Hrithik Ravi" loading="lazy"> 
             </div>
         </div>
     </div>
@@ -102,5 +100,77 @@ MathJax.Hub.Config({
     <a href="https://github.com/gwgundersen/blog-theme" target="_blank" rel="noopener">Gregory Gundersen</a>.
   </div>
 </footer>
+<script defer>
+document.addEventListener('DOMContentLoaded', () => {
+  const QUOTES = [
+    {
+      text: `A knowledge of the existence of something we cannot penetrate, our perceptions of the profoundest reason and the most radiant beauty, which only in their most primitive forms are accessible to our minds: it is this knowledge and this emotion that constitute true religiosity. In this sense, and only this sense, I am a deeply religious man.`,
+      author: 'Albert Einstein',
+      url: 'https://en.wikiquote.org/wiki/Albert_Einstein'
+    },
+    {
+      text: 'Imagination is more important than knowledge.', 
+      author: 'Albert Einstein', 
+      url: 'https://en.wikiquote.org/wiki/Albert_Einstein'
+    },
+    {
+      text: `I learned very early the difference between knowing the name of something and knowing something.`,
+      author: 'Richard Feynman',
+      url: 'https://en.wikiquote.org/wiki/Richard_Feynman'
+    },
+    {
+      text: 'Physics isn\'t the most important thing. Love is.',
+      author: 'Richard Feynman',
+      url: 'https://en.wikiquote.org/wiki/Richard_Feynman'
+    },
+    {
+      text: 'Stay hungry. Stay foolish.',
+      author: 'Steve Jobs',
+      url: 'https://en.wikiquote.org/wiki/Steve_Jobs'
+    },
+    {
+      text: 'I have never let my schooling interfere with my education.',
+      author: 'Mark Twain',
+      url: 'https://en.wikiquote.org/wiki/Mark_Twain'
+    },
+    {
+      text: 'The ability to observe without evaluating is the highest form of intelligence.',
+      author: 'Jiddu Krishnamurti',
+      url: 'https://en.wikiquote.org/wiki/Jiddu_Krishnamurti'
+    },
+    {
+      text: 'If we don\'t believe in freedom of expression for people we despise, we don\'t believe in it at all.',
+      author: 'Noam Chomsky',
+      url: 'https://en.wikiquote.org/wiki/Noam_Chomsky'
+    },
+    {
+      text: 'I was never aware of any other option but to question everything.',
+      author: 'Noam Chomsky',
+      url: 'https://en.wikiquote.org/wiki/Noam_Chomsky'
+    },
+    {
+      text: 'The question you raise “how can such a formulation lead to computations” doesn’t bother me in the least! Throughout my whole life as a mathematician, the possibility of making explicit, elegant computations has always come out by itself, as a byproduct of a thorough conceptual understanding of what was going on. Thus I never bothered about whether what would come out would be suitable for this or that, but just tried to understand – and it always turned out that understanding was all that mattered.',
+      author: 'Alexander Grothendieck',
+      url: 'https://en.wikiquote.org/wiki/Alexander_Grothendieck'
+    },
+    /*{
+      text: 'I can illustrate the ... approach with the ... image of a nut to be opened. The first analogy that came to my mind is of immersing the nut in some softening liquid, and why not simply water? From time to time you rub so the liquid penetrates better, and otherwise you let time pass. The shell becomes more flexible through weeks and months — when the time is ripe, hand pressure is enough, the shell opens like a perfectly ripened avocado! A different image came to me a few weeks ago. The unknown thing to be known appeared to me as some stretch of earth or hard marl, resisting penetration ... the sea advances insensibly in silence, nothing seems to happen, nothing moves, the water is so far off you hardly hear it ... yet finally it surrounds the resistant substance.',
+      author: 'Alexander Grothendieck',
+      url: 'https://en.wikiquote.org/wiki/Alexander_Grothendieck'
+    }*/
+  ];
+
+  // Pick one at random
+  const q = QUOTES[Math.floor(Math.random() * QUOTES.length)];
+
+  // Inject into your existing container: <div class="quote"><p>…</p></div>
+  const quoteBox = document.querySelector('.quote');
+  if (quoteBox) {
+    quoteBox.innerHTML = `
+      <p style="text-align:center;"><em>“${q.text}” — <a href="${q.url}" target="_blank" rel="noopener">${q.author}</a></em></p>
+    `;
+  }
+});
+</script>
 </body>
 </html>
