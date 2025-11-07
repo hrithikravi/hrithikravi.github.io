@@ -276,8 +276,8 @@ h1 {
   order:1;                 /* text first in the row */
 }
 .intro-photo{
-  flex:0 0 300px;
-  max-width:300px;
+  flex:0 0 260px;
+  max-width:260px;
   width:32%;
   height:auto;
   border-radius:6px;
