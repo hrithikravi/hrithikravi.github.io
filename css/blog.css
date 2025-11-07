@@ -214,6 +214,22 @@ h1 {
   /*margin-top: 1rem;*/      /* small top margin instead of large gap */
   font-style: italic;
 }
+
+.pronounce-btn{
+  margin-left:.5rem;
+  padding:0;
+  border:0;
+  background:none;
+  display:inline-flex;
+  align-items:baseline; /* sits nicely on the text line */
+  cursor:pointer;
+  opacity:.85;
+}
+.pronounce-btn:hover{ opacity:1; }
+.pronounce-btn:focus{ outline:2px solid #bbb; outline-offset:2px; }
+.pronounce-btn.playing svg{ animation:pulse 1s infinite; }
+@keyframes pulse{ 0%,100%{transform:scale(1)} 50%{transform:scale(1.08)} }
+
 /*
 .intro-hero {
   display: flex;
